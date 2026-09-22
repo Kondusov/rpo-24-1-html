@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            /* height: 100vh; */
+        }
+        .section-inlineBlock{
+            font-size: 0;
+        }
         .section-inlineBlock p{
             display: inline-block;
             width: 30%;
+            box-sizing: border-box;
+            font-size: 12px;
         }
         .section-displayFlex{
             display: flex;
@@ -22,20 +37,87 @@
             color: white;
             width: 100%;
             height: 50px;
-            position: absolute;
+            /* position: absolute; */
             bottom: 0;
             left: 0;
             text-align: center;
             vertical-align: middle;
         }
+        #btn_up{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgb(248, 150, 4);
+            color: white;
+            padding: 5px 12px;
+        }
+        #btn_up:hover{
+            background-color: aliceblue;
+            color: #f89604;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        #tel{
+            float: right;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px #4554 dotted;
+            font-size: 13px;
+            color: #f89604;
+        }
+        .pos-rel_abs{
+            position: relative;
+            height: 150px;
+        }
+        .pos-rel_abs p{
+            width: 30px;
+            height: 30px;
+            background-color: #f89604;
+        }
+        #sqr1{
+            position: absolute;
+            left: 45%;
+            top: 4%;
+        }
+        #sqr2{
+            position: absolute;
+            left: 45%;
+            bottom: 6%;
+        }
+        #sqr3{
+            position: absolute;
+            right: 41%;
+            top: 4%;
+        }
+        #sqr4{
+            position: absolute;
+            right: 41%;
+            bottom: 6%;
+        }
+        #sqrCenter{
+            position: absolute;
+            top: 28%;
+            left: 50%;
+        }
+        .box-sizing{
+            width: 100%;
+            height: 150px;
+            background-color: #578;
+            padding: 50px;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
+    <span id="main-menu"></span>
+    <a href="#main-menu">
+        <button id="btn_up">UP</button>
+    </a>
     <nav>
         <a href="index.html">Главная</a>
         <a href="second.html">Вторая</a>
         <a href="table.html">Таблица</a>
         <a href="contacts.html">Контакты</a>
+        <button id="tel">позвонить</button>
     </nav>
     <section class="section-inlineBlock">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis similique corporis, distinctio voluptatibus, error enim totam sequi consequuntur, ratione nulla accusamus dicta repudiandae delectus! Quaerat saepe ad illo autem.</p>
@@ -44,16 +126,28 @@
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis similique corporis, distinctio voluptatibus, error enim totam sequi consequuntur, ratione nulla accusamus dicta repudiandae delectus! Quaerat saepe ad illo autem.</p> -->
     </section>
     <hr>
+    <section class="pos-rel_abs">
+        <p id="sqr1"></p>
+        <p id="sqr2"></p>
+        <p id="sqr3"></p>
+        <p id="sqr4"></p>
+        <p id="sqrCenter"></p>
+    </section>
+    <hr>
     <section class="section-displayFlex">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis similique corporis, distinctio voluptatibus, error enim totam sequi consequuntur, ratione nulla accusamus dicta repudiandae delectus! Quaerat saepe ad illo autem.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis similique corporis, distinctio voluptatibus, error enim totam sequi consequuntur, ratione nulla accusamus dicta repudiandae delectus! Quaerat saepe ad illo autem.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis similique corporis, distinctio voluptatibus, error enim totam sequi consequuntur, ratione nulla accusamus dicta repudiandae delectus! Quaerat saepe ad illo autem.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perferendis similique corporis, distinctio voluptatibus, error enim totam sequi consequuntur, ratione nulla accusamus dicta repudiandae delectus! Quaerat saepe ad illo autem.</p>
     </section>
+    <section class="box-sizing">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic provident impedit vel in quia dolore ipsa qui quod illum sequi, sunt magnam praesentium odio voluptas totam aperiam earum obcaecati. Quidem!</p>
+    </section>
     <footer>
         <p>2026 год
         </p>
 
         </footer>
+        
 </body>
 </html>
