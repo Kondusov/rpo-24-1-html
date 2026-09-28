@@ -1,0 +1,14 @@
+Сочетание селекторов и комбинаторов
+Комбинаторы css
+https://developer.mozilla.org/ru/docs/Learn_web_development/Core/Styling_basics/Combinators
+
+Псевдоклассы
+https://developer.mozilla.org/ru/docs/Web/CSS/Reference/Selectors/Pseudo-classes
+
+
+
+Правила (@import, @media (min-width: 30em))
+псевдоклассах
+
+Использование CSS-анимации
+Fybvfwvhttps://developer.mozilla.org/ru/docs/Web/CSS/Guides/Animations/Using
