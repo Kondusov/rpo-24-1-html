@@ -105,6 +105,18 @@
             padding: 50px;
             box-sizing: border-box;
         }
+        .main-combinators .one-container p{
+            color: aquamarine;
+        }
+        .main-combinators div.second-container{
+            color: red;
+        }
+        .main-combinators article.second-container{
+            font-style: italic;
+        }
+        .one-container, .second-container{
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -143,11 +155,57 @@
     <section class="box-sizing">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic provident impedit vel in quia dolore ipsa qui quod illum sequi, sunt magnam praesentium odio voluptas totam aperiam earum obcaecati. Quidem!</p>
     </section>
+<section class="main-combinators">
+    <div class="one-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni ratione labore illum necessitatibus neque praesentium rem dolor assumenda vel accusantium quas, dolore similique quos nulla facilis blanditiis officia quia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni ratione labore illum necessitatibus neque praesentium rem dolor assumenda vel accusantium quas, dolore similique quos nulla facilis blanditiis officia quia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magni ratione labore illum necessitatibus neque praesentium rem dolor assumenda vel accusantium quas, dolore similique quos nulla facilis blanditiis officia quia?</p>
+    </div>
+    <div class="second-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor aut quae itaque vero velit architecto a quam nesciunt esse voluptates ducimus maiores distinctio similique, ratione amet. Quod, quam similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor aut quae itaque vero velit architecto a quam nesciunt esse voluptates ducimus maiores distinctio similique, ratione amet. Quod, quam similique!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dolor aut quae itaque vero velit architecto a quam nesciunt esse voluptates ducimus maiores distinctio similique, ratione amet. Quod, quam similique!</p>
+    </div>
+    <article class="second-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas doloribus repellat totam impedit, velit quo! Aut ipsum quae, voluptas dignissimos omnis modi maiores cum vel eos. Culpa, nobis enim.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas doloribus repellat totam impedit, velit quo! Aut ipsum quae, voluptas dignissimos omnis modi maiores cum vel eos. Culpa, nobis enim.</p>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Quidem voluptas doloribus repellat totam impedit,</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </div>
+    </article>
+</section>
     <footer>
         <p>2026 год
         </p>
 
         </footer>
-        
+        <style>
+            article>p{
+                color: darkgreen;
+            }
+            .one-container p:last-child{
+                color: blueviolet;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .one-container p:first-child{
+                color: green;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .one-container p:nth-child(2){
+                color: #f89604;
+            }
+            .second-container p:last-child{
+                color: blue;
+            }   
+            .second-container p:last-of-type{
+                color: blue;
+            }
+            *:focus{
+                border: 3px rgba(253, 6, 6, 0.6) solid;
+                font-size: 28px;
+            }
+        </style>
 </body>
 </html>

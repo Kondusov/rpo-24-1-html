@@ -29,3 +29,62 @@ button{
 #btn-res{
     background-color: rgb(110, 160, 230);
 }
+.shadow-text{
+    /* text-shadow: #457 3px 3px 2px; */
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+     text-shadow: 1px 1px 0px #e63946, 
+        2px 2px 0px #f77f00, 
+        3px 3px 0px #fcbf49, 
+        4px 4px 0px #a8dadc, 
+        5px 5px 0px #457b9d;
+}
+/* Анимация */
+.container-str_run{
+    overflow: hidden;
+}
+#runStr {
+  animation-duration: 5s;
+  animation-name: run_str;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+}
+
+@keyframes run_str {
+  from {
+    margin-left: -100%;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+/* END - Анимация */
+/* Контейнер, который скрывает выходящий за рамки текст */
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+}
+
+/* Движущаяся лента */
+#runZD {
+  display: inline-flex;
+  animation: slidein 3.5s linear infinite;
+}
+
+/* Ключевые кадры для бесшовной анимации */
+@keyframes slidein {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* Сдвигаем ровно на половину общей длины */
+  }
+}
