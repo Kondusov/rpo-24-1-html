@@ -1,0 +1,25 @@
+@media screen and (min-width: 440px) and (max-width: 1032px) {
+ .section-inlineBlock p {
+        display: inline-block;
+        width: 45%;
+    }
+}
+@media screen and (max-width: 1032px) {
+ nav{
+    font-size: 35px;
+ }
+}
+@media screen and (max-width: 440px) {
+ .section-inlineBlock p {
+    display: block;
+    width: 100%;
+  }
+  nav a{
+    display: block;
+    font-size: 35px;
+    text-align: center;
+    background-color: rgb(65, 63, 63);
+    color: azure;
+ }
+}
+
